@@ -11,9 +11,9 @@ async function getFeaturedProducts(): Promise<Product[]> {
     },
   });
 
-  const featuredProduts = await response.json();
+  const featuredProducts = await response.json();
 
-  return featuredProduts;
+  return featuredProducts;
 }
 
 export default async function Home() {
