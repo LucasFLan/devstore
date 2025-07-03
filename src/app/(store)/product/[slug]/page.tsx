@@ -3,6 +3,10 @@ import { Product } from "@/data/types/product";
 import { Metadata } from "next";
 import Image from "next/image";
 
+type ProductProps = {
+  params: Promise<{ slug: string }>;
+};
+
 async function getProduct(slug: string): Promise<Product> {
   const response = await api(`/products/${slug}`, {
     next: {
@@ -17,8 +21,10 @@ async function getProduct(slug: string): Promise<Product> {
 
 export async function generateMetadata({
   params,
-}: ProductPageProps): Promise<Metadata> {
-  const product = await getProduct(params.slug);
+}: ProductProps): Promise<Metadata> {
+  const { slug } = await params;
+
+  const product = await getProduct(slug);
 
   return {
     title: product.title,
@@ -30,19 +36,11 @@ export async function generateStaticParams() {
   const products: Product[] = await response.json();
 
   return products.map((product) => {
-    {
-      slug: product.slug;
-    }
+    return { slug: product.slug };
   });
 }
 
-type ProductPageProps = {
-  params: {
-    slug: string;
-  };
-};
-
-export default async function ProductPage({ params }: ProductPageProps) {
+export default async function ProductPage({ params }: ProductProps) {
   const { slug } = await params;
 
   const product = await getProduct(slug);
