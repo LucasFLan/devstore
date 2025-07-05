@@ -10,19 +10,19 @@
 // ***********************************************
 //
 //
-// -- This is a parent command --
+// -- This is a parent command -- comandos que voce pode usar com cy. direto sem precisar selecionar um elemento
 // Cypress.Commands.add('login', (email, password) => { ... })
 //
 //
-// -- This is a child command --
+// -- This is a child command -- Comando que voce tem que selecionar um elemento antes por exemplo click
 // Cypress.Commands.add('drag', { prevSubject: 'element'}, (subject, options) => { ... })
 //
 //
-// -- This is a dual command --
+// -- This is a dual command -- comando que pode ser os dois
 // Cypress.Commands.add('dismiss', { prevSubject: 'optional'}, (subject, options) => { ... })
 //
 //
-// -- This will overwrite an existing command --
+// -- This will overwrite an existing command -- sobrescrever um comando
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 //
 // declare global {
@@ -35,3 +35,14 @@
 //     }
 //   }
 // }
+
+declare namespace Cypress {
+  interface Chainable {
+    searchByQuery(query: string): Chainable<void>;
+  }
+}
+
+Cypress.Commands.add("searchByQuery", (query: string) => {
+  cy.visit("/");
+  cy.get("input[name=q]").type(query).parent("form").submit();
+});

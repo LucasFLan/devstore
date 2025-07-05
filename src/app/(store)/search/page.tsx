@@ -36,10 +36,10 @@ export default async function Search({ searchParams }: SearchProps) {
       <p className="text-sm">
         Resultados para: <span className="font-semibold">{query}</span>
       </p>
-
       <div className="grid grid-cols-3 gap-6">
         {products.map((product) => (
           <Link
+            key={product.id}
             href={`/product/moletom-never-stop-learning`}
             className="group relative rounded-lg bg-zinc-900 overflow-hidden flex justify-center items-end"
           >
