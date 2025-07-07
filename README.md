@@ -1,36 +1,28 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+[TYPESCRIPT__BADGE]: https://shields.io/badge/TypeScript-3178C6?logo=TypeScript&logoColor=FFF&style=flat-square
+[NEXT__BADGE]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
+[CYPRESS__BADGE]: https://img.shields.io/badge/Cypress-69D3A7?style=flat&logo=cypress&logoColor=black
+[TAILWIND__BADGE]: https://img.shields.io/badge/Tailwind_CSS-grey?style=for-the-badge&logo=tailwind-css&logoColor=38B2AC
 
-## Getting Started
+<h1 align="center" style="font-weight: bold;">Devstore</h1>
 
-First, run the development server:
+![typescript][TYPESCRIPT__BADGE]
+![next][NEXT__BADGE]
+![cypress][CYPRESS__BADGE]
+![tailwind][TAILWIND__BADGE]
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+<h2>Sobre o projeto</h2>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+A devstore é um projeto de e-commerce de roupas, com a navegação inteira SPA, funcionalidade de busca por produtos e adição ao carrinho.
+Esse é um projeto feito com a Rocketseat com o intuito de aprimorar meus conhecimentos sobre o App Router do Next.js, testes automatizados
+com o Cypress, dentre outras tecnologias.
+<br>
+[Deploy]()
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+<h2>Home</h2>
+<img src=""/>
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+<h2>Página de produto detalhado</h2>
+<img src=""/>
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+<h2>Página de busca</h2>
+<img src=""/>

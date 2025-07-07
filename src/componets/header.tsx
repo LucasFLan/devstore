@@ -23,7 +23,7 @@ export function Header() {
         <Link href="/" className="flex items-center gap-2 hover:underline">
           <span className="text-sm">Account</span>
           <Image
-            src="https://github.com/LucasFLan.png"
+            src="/user.png"
             alt="Foto do usuário"
             width={24}
             height={24}
