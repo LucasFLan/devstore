@@ -5,15 +5,15 @@
 
 <h1 align="center" style="font-weight: bold;">Devstore</h1>
 
-![typescript][TYPESCRIPT__BADGE]
 ![next][NEXT__BADGE]
-![cypress][CYPRESS__BADGE]
 ![tailwind][TAILWIND__BADGE]
+![typescript][TYPESCRIPT__BADGE]
+![cypress][CYPRESS__BADGE]
 
 <h2>Sobre o projeto</h2>
 
 A devstore é um projeto de e-commerce de roupas, com a navegação inteira SPA, funcionalidade de busca por produtos e adição ao carrinho.
-Esse é um projeto feito com a Rocketseat com o intuito de aprimorar meus conhecimentos sobre o App Router do Next.js, testes automatizados
+Esse é um projeto feito com a Rocketseat, com o intuito de aprimorar meus conhecimentos sobre o App Router do Next.js, testes automatizados
 com o Cypress, dentre outras tecnologias.
 <br>
 [Deploy](https://devstore-ashen-six.vercel.app/)
