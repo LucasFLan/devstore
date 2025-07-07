@@ -16,13 +16,13 @@ A devstore é um projeto de e-commerce de roupas, com a navegação inteira SPA,
 Esse é um projeto feito com a Rocketseat com o intuito de aprimorar meus conhecimentos sobre o App Router do Next.js, testes automatizados
 com o Cypress, dentre outras tecnologias.
 <br>
-[Deploy]()
+[Deploy](https://devstore-ashen-six.vercel.app/)
 
 <h2>Home</h2>
-<img src=""/>
+<img src="https://raw.githubusercontent.com/LucasFLan/devstore/main/assets/home.png"/>
 
 <h2>Página de produto detalhado</h2>
-<img src=""/>
+<img src="https://raw.githubusercontent.com/LucasFLan/devstore/main/assets/product_detail.png"/>
 
 <h2>Página de busca</h2>
-<img src=""/>
+<img src="https://raw.githubusercontent.com/LucasFLan/devstore/main/assets/search.png"/>
